@@ -22,6 +22,11 @@ class MyApp extends StatelessWidget {
         title: 'Provider Demo',
         theme: appTheme,
         initialRoute: '/',
+        routes: {
+          '/': (context) => MyLogin(),
+          '/catalog': (context) => MyCatalog(),
+          '/cart': (context) => MyCart(),
+        },
       ),
     );
   }
